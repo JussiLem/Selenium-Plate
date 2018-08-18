@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+}
+
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileJava {
+    options.fork = true
+    options.encoding = 'UTF-8'
+    options.incremental = true
+    targetCompatibility = 1.10
+    sourceCompatibility = 1.10
+
+    options.compilerArgs += [
+            '-Xlint',
+            '-parameters'
+    ]
+}
+
+compileTestJava {
+    options.fork = true
+    options.encoding = 'UTF-8'
+    options.incremental = true
+    targetCompatibility = 1.10
+    sourceCompatibility = 1.10
+
+    options.compilerArgs += [
+            '-Xlint',
+            '-parameters'
+    ]
+}
+
+dependencies {
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.2.0"
+    testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
+    implementation group: 'com.google.flogger', name: 'flogger', version: '0.2'
+    implementation group: 'com.google.flogger', name: 'flogger-system-backend', version: '0.2'
+
+
+}
+
+    sourceCompatibility = JavaVersion.VERSION_1_10
