@@ -1,4 +1,4 @@
-package jussilemmetyinen.me.utils;
+package me.jussilemmetyinen.utils;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;

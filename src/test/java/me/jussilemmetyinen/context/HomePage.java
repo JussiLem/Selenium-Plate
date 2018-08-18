@@ -1,7 +1,7 @@
-package jussilemmetyinen.me.context;
+package me.jussilemmetyinen.context;
 
 import com.google.common.flogger.FluentLogger;
-import jussilemmetyinen.me.utils.EnvironmentManager;
+import me.jussilemmetyinen.utils.EnvironmentManager;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -3,6 +3,7 @@ plugins {
 }
 
 version = "1.0-SNAPSHOT"
+group 'me.jussilemmetyinen'
 
 repositories {
     mavenCentral()
@@ -43,8 +44,4 @@ dependencies {
     testImplementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.14.0'
     implementation group: 'com.google.flogger', name: 'flogger', version: '0.2'
     implementation group: 'com.google.flogger', name: 'flogger-system-backend', version: '0.2'
-
-
 }
-
-    sourceCompatibility = JavaVersion.VERSION_1_10
